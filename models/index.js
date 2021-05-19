@@ -40,17 +40,13 @@ const { Theme, User, User_Page, Page } = sequelize.models;
 Theme.hasMany(User);
 User.belongsTo(Theme);
 
-User.belongsToMany(Page, { through: 'User_Page', foreignKey: 'user_id', as: 'Page' });
-Page.belongsToMany(User, { through: 'User_Page', foreignKey: 'page_id', as: 'User' });
+User_Page.belongsTo(User);
+User.hasMany(User_Page);
 
-User_Page.belongsTo(User, {
-  foreignKey: 'user_id',
-  as: 'User'
-});
+User_Page.belongsTo(Page);
+Page.hasMany(User_Page);
 
-User_Page.belongsTo(Page, {
-  foreignKey: 'page_id',
-  as: 'Page'
-});
+User.belongsToMany(Page, { through: 'User_Page', foreignKey: 'userId', as: 'Page' });
+Page.belongsToMany(User, { through: 'User_Page', foreignKey: 'pageId', as: 'User' });
 
 module.exports = db;
