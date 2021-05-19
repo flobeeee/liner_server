@@ -14,8 +14,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   User_page.init({
-    user_id: DataTypes.INTEGER,
-    page_id: DataTypes.INTEGER,
+    userId: DataTypes.INTEGER,
+    pageId: DataTypes.INTEGER,
     text: DataTypes.STRING,
     colorHex: DataTypes.STRING
   }, {
