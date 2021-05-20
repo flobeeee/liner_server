@@ -1,5 +1,3 @@
-# liner_server
-
 # 스키마
 
 ![image](https://user-images.githubusercontent.com/72782088/118912338-9c96e380-b962-11eb-99a3-b2761f0110e9.png)
