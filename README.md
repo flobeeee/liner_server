@@ -13,3 +13,4 @@
 ![image](https://user-images.githubusercontent.com/72782088/118934746-a8e06800-b985-11eb-8990-25a504757c3f.png)
 ![image](https://user-images.githubusercontent.com/72782088/118938719-e8a94e80-b989-11eb-8c89-26482c466dad.png)
 
+# [테스트기록 및 후기](https://velog.io/@flobeeee/LinerAPI-%EB%B0%8F-%ED%85%8C%EC%8A%A4%ED%8A%B8%EA%B8%B0%EB%A1%9D)
