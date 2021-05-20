@@ -6,6 +6,10 @@ module.exports = {
       pageUrl: 'www.naver.com',
       createdAt: new Date(),
       updatedAt: new Date(),
+    }, {
+      pageUrl: 'www.youtube.com',
+      createdAt: new Date(),
+      updatedAt: new Date(),
     }], {});
   },
 

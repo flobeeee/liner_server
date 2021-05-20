@@ -46,7 +46,4 @@ User.hasMany(User_Page);
 User_Page.belongsTo(Page);
 Page.hasMany(User_Page);
 
-User.belongsToMany(Page, { through: 'User_Page', foreignKey: 'userId', as: 'Page' });
-Page.belongsToMany(User, { through: 'User_Page', foreignKey: 'pageId', as: 'User' });
-
 module.exports = db;

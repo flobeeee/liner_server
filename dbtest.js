@@ -13,7 +13,7 @@ User.findOne({
   // 유저가 선택한 텍스트
   .then(User.findAll({
     where: {
-      userId: 'user1',
+      userId: 123,
     },
     include: [
       {
@@ -30,7 +30,7 @@ User.findOne({
   // 유저가 선택한 사이트
   .then(User.findAll({
     where: {
-      userId: 'user1',
+      userId: 123,
     },
     include: [
       {

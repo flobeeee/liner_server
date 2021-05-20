@@ -7,6 +7,11 @@ module.exports = {
       themeId: 1,
       createdAt: new Date(),
       updatedAt: new Date(),
+    }, {
+      userId: 'user2',
+      themeId: 2,
+      createdAt: new Date(),
+      updatedAt: new Date(),
     }], {});
   },
 
