@@ -8,7 +8,7 @@
 
 # 테크
 - Javascript
-- ExpressJS, NodeJS, Sequelize ORM, MySQL
+- Express, Node.js, Sequelize ORM, MySQL
 - Eslint, Nodemon
 
 # [API](https://app.gitbook.com/@sssver28/s/liner/)
