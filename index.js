@@ -9,8 +9,9 @@ const readRouter = require('./routes/read');
 const deleteRouter = require('./routes/delete');
 
 app.use(cors({
-  origin: 'localhost',
-  Methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  origin: 'http://localhost',
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  credentials: true,
 }));
 
 app.use(express.json());
