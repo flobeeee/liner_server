@@ -31,7 +31,7 @@ module.exports = {
             text
           });
         } else {
-          res.status(404);
+          res.status(404).json({ 'message': 'not found' });
         }
       } else if (colorHex) {
         const UserPageDB = await User_Page.update({
@@ -57,7 +57,7 @@ module.exports = {
             text
           });
         } else {
-          res.status(404);
+          res.status(404).json({ 'message': 'not found' });
         }
       } else {
         const UserPageDB = await User_Page.update({
@@ -83,12 +83,11 @@ module.exports = {
             text
           });
         } else {
-          res.status(404);
+          res.status(404).json({ 'message': 'not found' });
         }
       }
     } else {
-      res.status(404).json({ 'message': 'not enough data' });
+      res.status(400).json({ 'message': 'not enough body parameter' });
     }
-
   }
 };

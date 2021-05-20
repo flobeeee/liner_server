@@ -22,7 +22,7 @@ module.exports = {
       });
       const highlightId = UserpageDB.dataValues.id;
 
-      await res.json({
+      await res.status(201).json({
         highlightId,
         userId,
         pageId,
@@ -31,7 +31,7 @@ module.exports = {
       });
 
     } else {
-      res.status(404).json({ 'message': 'not enough data' });
+      res.status(400).json({ 'message': 'not enough body parameter' });
     }
   },
 };

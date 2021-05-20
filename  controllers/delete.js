@@ -12,7 +12,7 @@ module.exports = {
       });
       res.json({ 'message': 'OK' });
     } else {
-      res.status(404).json({ 'message': 'not enough data' });
+      res.status(400).json({ 'message': 'not enough body parameter' });
     }
   }
 };
